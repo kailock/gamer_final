@@ -21,7 +21,10 @@
 </head>
 
 <body ng-app="myApp" ng-controller="myCtrl">
+
 	<div class='container' ng-show='!userId'>
+        <h1>GAMER Group</h1>
+        <h2>GAme MEtadata Research</h2>
 		<form name='logInForm' novalidate>
 			<div class='form-group'>
 				<label>Username:</label>
@@ -42,6 +45,10 @@
 	<div ng-show='userId' class='container-fluid' id='changingContent'>
 		<div ui-view></div>
 	</div>
+
+    <footer>
+        Copyright 2015 GAMER Group
+    </footer>
 
 </body>
 </html>
